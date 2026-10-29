@@ -1,6 +1,6 @@
-# QQWorld Collector Deluxe — Nexhub 二开版
+# QQWorld Collector Deluxe — Nexhub 开心版
 
-基于 QQWorld Collector Deluxe **5.0.0 beta1** 的维护版本。
+基于 QQWorld Collector Deluxe **5.0.0 beta1** 的开心版本。
 
 - 原作者：Michael Wang / QQWorld
 - 二次开发：**Nexhub**
