@@ -1,0 +1,2 @@
+<?php
+namespace qqworld_collector\module\remote_publish; use qqworld_collector\lib; class upyun extends remote_publish { var $guid = 'upyun'; public function init() {} public function get_client($args) { extract($args); $upyun = new \qqworld_collector\module\cloud_storage\upyun; $upyun->enabled = true; $upyun->is_current = true; $upyun->options = $this->options; $upyun->username = trim($username); $upyun->password = trim($password); $upyun->bucket = trim($bucket); $upyun->access_service(); return $upyun; } } ?>

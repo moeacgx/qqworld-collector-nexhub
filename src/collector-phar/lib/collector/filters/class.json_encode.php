@@ -1,0 +1,2 @@
+<?php
+namespace qqworld_collector\module\collect_filter; class json_encode extends filter { public function parse($item, $args, $source_link, $html, $type, $item_args, $download_args, $mode) { if ($this->is_not_empty($item) && is_array($item)) { $item = json_encode($item, JSON_INVALID_UTF8_IGNORE); } return $item; } } ?>

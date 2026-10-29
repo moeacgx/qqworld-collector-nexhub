@@ -1,0 +1,2 @@
+<?php
+ $objectManager = \QQWorld\TestFramework\Helper\Bootstrap::getObjectManager(); $attributeSet = $objectManager->create(\QQWorld\Eav\Model\Entity\Attribute\Set::class) ->load('empty_attribute_set', 'attribute_set_name'); if ($attributeSet->getId()) { $attributeSet->delete(); } 

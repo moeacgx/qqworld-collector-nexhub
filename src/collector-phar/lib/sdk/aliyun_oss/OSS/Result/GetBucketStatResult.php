@@ -1,0 +1,2 @@
+<?php
+ namespace OSS\Result; use OSS\Model\BucketStat; class GetBucketStatResult extends Result { protected function parseDataFromResponse() { $content = $this->rawResponse->body; $stat = new BucketStat(); $stat->parseFromXml($content); return $stat; } }

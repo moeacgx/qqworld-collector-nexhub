@@ -1,0 +1,2 @@
+<?php
+namespace qqworld_collector\module\collect_filter; class base64 extends filter { public function filter($item, $args, $source_link, $html, $type, $item_args, $download_args, $mode) { extract($args); switch ($mode) { case 'encode': $item = base64_encode($item); break; case 'decode': $item = base64_decode($item); break; } return $item; } } ?>

@@ -1,0 +1,3 @@
+<div><section class="qqworld-aspect-ratio" data-ratio="16:10"><iframe src="//player.bilibili.com/player.html?aid=65299033&bvid=BV1m4411z7Ln&cid=113331040&page=1" scrolling="no" data-ratio="16:10" framespacing="0" allowfullscreen="true"></iframe></section></div>
+<p>使用浏览器前端扩展程序采集，可以对付一些无法采集的网站。</p>
+<p><a href="https://www.bilibili.com/video/av65299033/" target="_blank" class="button button-primary qc-icon link">去bilibili观看</a></p>

@@ -1,0 +1,2 @@
+<?php
+namespace qqworld_collector\module\static_cache; class home extends handler { public function make_cache() { switch ($this->options->qc_static_cache_mode) { case 'half': $path = WP_CONTENT_DIR . DIRECTORY_SEPARATOR . 'static-cache' . DIRECTORY_SEPARATOR . md5('/'); return $this->set_half_cache($path, home_url()); break; case 'pure': $path = ABSPATH . DIRECTORY_SEPARATOR . 'index.html'; $args = 'index.php'; return $this->set_pure_cache($path, $args); break; } } } ?>

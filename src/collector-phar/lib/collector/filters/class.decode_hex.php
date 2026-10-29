@@ -1,0 +1,2 @@
+<?php
+namespace qqworld_collector\module\collect_filter; class decode_hex extends filter { public function hexDecode($str) { $preg = preg_match_all('/\\\x(\w{2})/i', $str, $matches); if ($preg) { $patterns = $matches[0]; $replacements = $matches[1]; foreach ($replacements as &$replacement) { $replacement = chr(hexdec($replacement)); } $str = str_replace($patterns, $replacements, $str); } return $str; } public function filter($item, $args, $source_link, $html, $type, $item_args, $download_args, $mode) { $item = $this->hexDecode($item); return $item; } } ?>

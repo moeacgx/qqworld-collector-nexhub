@@ -1,0 +1,2 @@
+<?php
+namespace qqworld_collector\module\collect_filter; class trim_words extends filter { public function filter($item, $args, $source_link, $html, $type, $item_args, $download_args, $mode) { $length = isset($args['str_length']) ? $args['str_length'] : 65; $suffix = isset($args['suffix']) ? $args['suffix'] : '...'; $item = wp_trim_words( $item, $length, $suffix ); return $item; } } ?>

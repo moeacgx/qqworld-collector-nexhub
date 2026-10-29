@@ -1,0 +1,1 @@
+<p align="center"><img src="<?php print QQWORLD_COLLECTOR_DOCUMENTS_URL; ?>collector/flow-chart/1.png" /></p>

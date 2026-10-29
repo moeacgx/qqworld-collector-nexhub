@@ -1,0 +1,2 @@
+<?php
+namespace qqworld_collector\module\collect_item; use qqworld_collector\lib; class comment_meta extends lib { var $guid; public function init() { add_filter( 'qqworld-collector-collecting-engine-collect-item-' . $this->guid, array($this, 'filter'), 10, 7 ); } public function filter($items, $args, $source_link, $html, $download_args, $settings, $mode) { return $items; } } ?>

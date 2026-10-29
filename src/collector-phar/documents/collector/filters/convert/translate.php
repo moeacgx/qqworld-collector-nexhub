@@ -1,0 +1,2 @@
+<p align="center"><img src="<?php print QQWORLD_COLLECTOR_DOCUMENTS_URL; ?>collector/filters/convert/translate/1.png" /></p>
+<p>在 <a href="<?php print admin_url('admin.php?page=qqworld-collector-translate'); ?>" target="_blank">这里</a> 设置翻译，不需要启用或设置自动模式也可以执行翻译，只需要设置翻译接口并保存即可。</p>

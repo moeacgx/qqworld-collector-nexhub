@@ -1,0 +1,2 @@
+<?php
+ namespace OSS\Result; use OSS\Model\WormConfig; class GetBucketWormResult extends Result { protected function parseDataFromResponse() { $content = $this->rawResponse->body; $config = new WormConfig(); $config->parseFromXml($content); return $config; } }

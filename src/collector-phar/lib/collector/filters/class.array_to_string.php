@@ -1,0 +1,2 @@
+<?php
+namespace qqworld_collector\module\collect_filter; class array_to_string extends filter { public function parse($item, $args, $source_link, $html, $type, $item_args, $download_args, $mode) { if (!empty($item) && is_array($item)) { $item = array_filter($item, array($this, 'is_not_empty')); $glue = isset($args['glue']) ? $args['glue'] : ''; $item = implode($glue, $item); } return $item; } } ?>

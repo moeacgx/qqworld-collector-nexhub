@@ -1,0 +1,2 @@
+<?php
+namespace qqworld_collector\module\collect_filter; class decode_html_entity extends filter { public function filter($item, $args, $source_link, $html, $type, $item_args, $download_args, $mode) { $patterns = array('\n', '\t', '\r'); $replacements = array('', '', ''); $item = str_replace($patterns, $replacements, $item); $item = html_entity_decode($item); return $item; } } ?>

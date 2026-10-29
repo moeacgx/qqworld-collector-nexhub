@@ -1,0 +1,2 @@
+<?php
+ define('ALLURE_CLI', 'allure'); $mtfRoot = dirname(dirname(__FILE__)); $mtfRoot = str_replace('\\', '/', $mtfRoot); define('MTF_BP', $mtfRoot); $allureResultsDir = MTF_BP . '/var/allure-results/'; $allureReportDir = MTF_BP . '/var/allure-report/'; exec(ALLURE_CLI . ' generate ' . $allureResultsDir . ' -o '. $allureReportDir); exec(ALLURE_CLI . ' report open --report-dir ' . $allureReportDir); 

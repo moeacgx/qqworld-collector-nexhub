@@ -1,0 +1,2 @@
+<?php
+ namespace QQWorld\Sales\Test\TestStep; use QQWorld\Sales\Test\Page\Adminhtml\OrderIndex; use QQWorld\Mtf\TestStep\TestStepInterface; class CreateNewOrderStep implements TestStepInterface { protected $orderIndex; public function __construct(OrderIndex $orderIndex) { $this->orderIndex = $orderIndex; } public function run() { $this->orderIndex->getGridPageActions()->addNew(); } } 

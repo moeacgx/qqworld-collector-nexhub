@@ -1,0 +1,2 @@
+<?php
+ namespace OSS\Result; use OSS\Model\ServerSideEncryptionConfig; class GetBucketEncryptionResult extends Result { protected function parseDataFromResponse() { $content = $this->rawResponse->body; $config = new ServerSideEncryptionConfig(); $config->parseFromXml($content); return $config; } } 

@@ -1,0 +1,2 @@
+<?php
+ namespace OSS\Result; use OSS\Model\TaggingConfig; class GetBucketTagsResult extends Result { protected function parseDataFromResponse() { $content = $this->rawResponse->body; $config = new TaggingConfig(); $config->parseFromXml($content); return $config; } } 

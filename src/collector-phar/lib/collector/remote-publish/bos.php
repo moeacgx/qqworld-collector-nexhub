@@ -1,0 +1,2 @@
+<?php
+namespace qqworld_collector\module\remote_publish; use qqworld_collector\lib; class bos extends remote_publish { var $guid = 'bos'; public function init() {} public function get_client($args) { extract($args); $bos = new \qqworld_collector\module\cloud_storage\baidu_bos; $bos->enabled = true; $bos->is_current = true; $bos->options = $this->options; $bos->accesskey = trim($accesskey); $bos->secretkey = trim($secretkey); $bos->endpoint = trim($endpoint); $bos->bucket = trim($bucket); $bos->access_service(); return $bos; } } ?>

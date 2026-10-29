@@ -1,0 +1,2 @@
+<?php
+ namespace QQWorld\Framework\ObjectManager\TestAsset; class ConstructorFiveArguments extends \QQWorld\Framework\ObjectManager\TestAsset\ConstructorFourArguments { protected $_five; public function __construct( \QQWorld\Framework\ObjectManager\TestAsset\Basic $one, \QQWorld\Framework\ObjectManager\TestAsset\Basic $two, \QQWorld\Framework\ObjectManager\TestAsset\Basic $three, \QQWorld\Framework\ObjectManager\TestAsset\Basic $four, \QQWorld\Framework\ObjectManager\TestAsset\Basic $five ) { parent::__construct($one, $two, $three, $four); $this->_five = $five; } } 

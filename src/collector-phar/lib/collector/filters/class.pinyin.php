@@ -1,0 +1,2 @@
+<?php
+namespace qqworld_collector\module\collect_filter; class pinyin extends filter { public function filter($item, $args, $source_link, $html, $type, $item_args, $download_args, $mode) { $this->includes_lib('pinyin'); $pinyin = new Overtrue\Pinyin\Pinyin(); $results = $pinyin->convert($item); $item = implode($args, $results); return $item; } } ?>

@@ -1,0 +1,2 @@
+<?php
+namespace qqworld_collector\module\collect_filter; class decode_markdown extends filter { public function filter($item, $args, $source_link, $html, $type, $item_args, $download_args, $mode) { if (!class_exists('Parsedown')) require QQWORLD_COLLECTOR_DIR . 'lib' . DIRECTORY_SEPARATOR . 'Parsedown.php'; $Parsedown = new \Parsedown(); $item = $Parsedown->text($item); return $item; } } ?>

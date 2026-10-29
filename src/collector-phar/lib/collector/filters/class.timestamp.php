@@ -1,0 +1,2 @@
+<?php
+namespace qqworld_collector\module\collect_filter; class timestamp extends filter { public function filter($item, $args, $source_link, $html, $type, $item_args, $download_args, $mode) { $strtotime = $args['strtotime']; if ($strtotime == 1) { $time = strtotime($item); if ($time) $item = $time; } else { $item = intval($item); if (preg_match('/\d{10}/', $item)) { $date_format = $args['date_format']; $item = date($date_format, $item); } else { $item = date($date_format, current_time('timestamp')); } } return $item; } } ?>

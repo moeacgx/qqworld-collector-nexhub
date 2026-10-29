@@ -1,0 +1,2 @@
+<?php
+ namespace QQWorld\Framework\Crontab; use QQWorld\Framework\Exception\LocalizedException; interface CrontabManagerInterface { const TASKS_BLOCK_START = '#~ MAGENTO START'; const TASKS_BLOCK_END = '#~ MAGENTO END'; public function getTasks(); public function saveTasks(array $tasks); public function removeTasks(); } 

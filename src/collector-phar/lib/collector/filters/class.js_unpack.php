@@ -1,0 +1,2 @@
+<?php
+namespace qqworld_collector\module\collect_filter; class js_unpack extends filter { public function filter($item, $args, $source_link, $html, $type, $item_args, $download_args, $mode) { $preg = preg_match('/eval.*/i', $item, $match); if ($preg) { if (!class_exists('\JavaScriptUnpacker')) require QQWORLD_COLLECTOR_DIR . 'lib' . DIRECTORY_SEPARATOR . 'JavaScriptUnpacker.php'; $item = \JavaScriptUnpacker::Unpack($match[0]); } return $item; } } ?>

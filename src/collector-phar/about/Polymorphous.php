@@ -1,0 +1,2 @@
+<?php
+ namespace QQWorld\Framework\ObjectManager\Test\Unit\Factory\Fixture; class Polymorphous { private $args; public function __construct() { $this->args = func_get_args(); } public function getArg($key) { return isset($this->args[$key]) ? $this->args[$key] : null; } } 

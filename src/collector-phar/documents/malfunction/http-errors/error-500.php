@@ -1,0 +1,2 @@
+<h2>内部服务器错误</h2>
+<p>请参考 <a class="button button-primary qc-icon link" href="<?php print admin_url('admin.php?page=qqworld-collector-documents#malfunction--unknow-error'); ?>" target="_blank">此站点正遇到技术问题</a></p>

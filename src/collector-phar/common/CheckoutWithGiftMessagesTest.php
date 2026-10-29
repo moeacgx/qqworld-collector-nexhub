@@ -1,0 +1,2 @@
+<?php
+ namespace QQWorld\GiftMessage\Test\TestCase; use QQWorld\Mtf\TestCase\Scenario; class CheckoutWithGiftMessagesTest extends Scenario { const MVP = 'no'; const SEVERITY = 'S2'; const TO_MAINTAIN = 'yes'; public function test() { $this->executeScenario(); } } 

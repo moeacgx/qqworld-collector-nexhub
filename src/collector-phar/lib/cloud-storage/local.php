@@ -1,0 +1,2 @@
+<?php
+namespace qqworld_collector\module\cloud_storage; use qqworld_collector\module\cloudStorage0; class local extends cloudStorage0 { public function init() { $this->protocol = $this->options->cloud_storage_local_protocol; $this->host = $this->options->cloud_storage_local_host; } public function add_could_storage_form($guid) { require QQWORLD_COLLECTOR_DIR . 'pages' . DIRECTORY_SEPARATOR . 'cloudStorage-'.$this->guid.'.php'; } } ?>

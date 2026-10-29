@@ -1,0 +1,2 @@
+<?php
+ namespace OSS\Model; class DeleteMarkerInfo { public function __construct($key, $versionId, $lastModified, $isLatest) { $this->key = $key; $this->versionId = $versionId; $this->lastModified = $lastModified; $this->isLatest = $isLatest; } public function getKey() { return $this->key; } public function getVersionId() { return $this->versionId; } public function getLastModified() { return $this->lastModified; } public function getIsLatest() { return $this->isLatest; } private $key = ""; private $versionId = ""; private $lastModified = ""; private $isLatest = ""; }

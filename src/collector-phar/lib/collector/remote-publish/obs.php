@@ -1,0 +1,2 @@
+<?php
+namespace qqworld_collector\module\remote_publish; use qqworld_collector\lib; class obs extends remote_publish { var $guid = 'obs'; public function init() {} public function get_client($args) { extract($args); $obs = new \qqworld_collector\module\cloud_storage\huawei_obs; $obs->enabled = true; $obs->is_current = true; $obs->options = $this->options; $obs->endpoint = trim($endpoint); $obs->access_key_id = trim($args['access-key-id']); $obs->access_key_secret = trim($args['access-key-secret']); $obs->bucket = trim($bucket); $obs->access_service(); return $obs; } } ?>

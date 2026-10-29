@@ -1,0 +1,2 @@
+<?php
+ use QQWorld\Framework\Registry; use QQWorld\Store\Model\Store; use QQWorld\TestFramework\Helper\Bootstrap; $objectManager = Bootstrap::getObjectManager(); $registry = $objectManager->get(Registry::class); $registry->unregister('isSecureArea'); $registry->register('isSecureArea', true); $store = $objectManager->get(Store::class); $store->load('test', 'code'); if ($store->getId()) { $store->delete(); } $registry->unregister('isSecureArea'); $registry->register('isSecureArea', false); 

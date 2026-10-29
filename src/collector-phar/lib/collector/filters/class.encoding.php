@@ -1,0 +1,2 @@
+<?php
+namespace qqworld_collector\module\collect_filter; class encoding extends filter { public function filter($item, $args, $source_link, $html, $type, $item_args, $download_args, $mode) { $original = isset($args['original']) ? $args['original'] : ''; if ($item) { $item = apply_filters( 'qqworld-collector-any-to-utf8', $item, $original ); } return $item; } } ?>

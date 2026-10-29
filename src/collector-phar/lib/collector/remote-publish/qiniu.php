@@ -1,0 +1,2 @@
+<?php
+namespace qqworld_collector\module\remote_publish; use qqworld_collector\lib; class qiniu extends remote_publish { var $guid = 'qiniu'; public function init() {} public function get_client($args) { extract($args); $qiniu = new \qqworld_collector\module\cloud_storage\qiniu; $qiniu->enabled = true; $qiniu->is_current = true; $qiniu->options = $this->options; $qiniu->AccessKey = trim($accesskey); $qiniu->SecretKey = trim($secretkey); $qiniu->bucket = trim($bucket); $qiniu->access_service(); return $qiniu; } } ?>

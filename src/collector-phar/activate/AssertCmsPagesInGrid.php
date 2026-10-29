@@ -1,0 +1,2 @@
+<?php
+ namespace QQWorld\Cms\Test\Constraint; use QQWorld\Cms\Test\Page\Adminhtml\CmsPageIndex; use QQWorld\Mtf\Constraint\AbstractConstraint; class AssertCmsPagesInGrid extends AbstractConstraint { public function processAssert( CmsPageIndex $cmsIndex, AssertCmsPageInGrid $assertCmsPageInGrid, $cmsPages, $expectedStatus ) { foreach ($cmsPages as $cmsPage) { $assertCmsPageInGrid->processAssert($cmsIndex, $cmsPage, $expectedStatus); } } public function toString() { return 'Cms pages are present in pages grid.'; } } 

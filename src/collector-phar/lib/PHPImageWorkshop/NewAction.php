@@ -1,0 +1,2 @@
+<?php
+ namespace QQWorld\Widget\Controller\Adminhtml\Widget\Instance; class NewAction extends \QQWorld\Widget\Controller\Adminhtml\Widget\Instance { public function execute() { $this->_forward('edit'); } } 

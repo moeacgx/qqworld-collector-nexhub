@@ -1,0 +1,1 @@
+<p>注意：在 <a href="https://ai.youdao.com" target="_blank">有道智云</a> 后台新建应用后不要忘记绑定翻译服务。</p>

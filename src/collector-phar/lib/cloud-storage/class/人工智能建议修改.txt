@@ -1,0 +1,35 @@
+class.cloudStorage1
+
+以下是修改的源代码，如果报错可以替换回去
+
+	// 用于替换FTP或云存储的核心地址，地址必须有规律可循，如果是新浪图床或其他什么别的无规律的，就需要在实例中重写这个函数
+	public function apply_image_downsize($downsize, $id, $size) {
+		if (get_post_meta($id, "_sync_{$this->className}", true)) {
+			if (!is_array($size) || $size == 'full') remove_filter( 'wp_get_attachment_url', array($this, 'wp_get_attachment_url'), $this->priority ); // 会干扰自定义缩略图尺寸的输出
+			$metadata = wp_get_attachment_metadata( $id );
+			$sizes = $this->parse_metadata($id, $metadata, $this->cloud_thumbnail);
+			$image_sizes = !empty($metadata['sizes']) ? $metadata['sizes'] : null;
+			if ( !is_array($size) ) {
+				if (isset($sizes[$size])) {
+					$width = isset($sizes[$size]['width']) ? $sizes[$size]['width'] : '';
+					$height = isset($sizes[$size]['height']) ? $sizes[$size]['height'] : '';
+					$downsize = $size == 'full' ? array($sizes[$size]['src'], $width, $height) : array($sizes[$size]['src'], $width, $height, true);
+				}
+			} else {
+				if ( $intermediate = image_get_intermediate_size($id, $size) ) {
+					$width = $intermediate['width'];
+					$height = $intermediate['height'];
+					foreach ($image_sizes as $size_name => $size) {
+						if ($width < $size['width'] && $height < $size['height']) {
+							break;
+						}
+					}
+					$downsize = $size_name == 'full' ? array($sizes[$size_name]['src'], $width, $height) : array($sizes[$size_name]['src'], $width, $height, true);
+				} else if (isset($sizes['full'])) {
+					$downsize = array($sizes['full']['src'], $size[0], $size[1]);
+				}
+			}
+			if (!is_array($size) || $size == 'full') add_filter( 'wp_get_attachment_url', array($this, 'wp_get_attachment_url'), $this->priority, 2 );
+		}
+		return $downsize;
+	}

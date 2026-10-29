@@ -1,0 +1,2 @@
+<?php
+namespace qqworld_collector\module\collect_filter; class absolute_address extends filter { public function filter($item, $args, $source_link, $html, $type, $item_args, $download_args, $mode) { $item = apply_filters( 'qqworld-collector-convert-relative-url-to-absolute-url', $item, $source_link ); return $item; } } ?>

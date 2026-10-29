@@ -1,0 +1,2 @@
+<?php
+namespace qqworld_collector\module\collect_filter; use qqworld_collector\lib; class pre_collecting extends lib { var $guid; public function init() { add_filter( 'qqworld-collector-collecting-engine-collect-item-filter-' . $this->guid, array($this, 'filter'), 10, 4 ); } public function filter($item, $args, $source_link, $html) { return $item; } } ?>

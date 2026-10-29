@@ -1,0 +1,2 @@
+<?php
+ $objectManager = \QQWorld\TestFramework\Helper\Bootstrap::getObjectManager(); $agreement = $objectManager->create(\QQWorld\CheckoutAgreements\Model\Agreement::class); $agreement->load('First Checkout Agreement (active)', 'name'); if ($agreement->getId()) { $agreement->delete(); } $agreement = $objectManager->create(\QQWorld\CheckoutAgreements\Model\Agreement::class); $agreement->load('Second Checkout Agreement (active)', 'name'); if ($agreement->getId()) { $agreement->delete(); } 

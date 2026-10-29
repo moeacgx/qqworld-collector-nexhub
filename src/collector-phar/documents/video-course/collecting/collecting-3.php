@@ -1,0 +1,3 @@
+<div><section class="qqworld-aspect-ratio" data-ratio="16:10"><iframe src="//player.bilibili.com/player.html?aid=30253629&cid=52769958&page=1" scrolling="no" data-ratio="16:10" framespacing="0" allowfullscreen="true"></iframe></section></div>
+<p>要点：将采集到的特色图品小图替换成完整尺寸大图。</p>
+<p><a href="https://www.bilibili.com/video/av30253629?zw" target="_blank" class="button button-primary qc-icon link">去bilibili观看</a></p>

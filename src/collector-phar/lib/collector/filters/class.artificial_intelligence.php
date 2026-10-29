@@ -1,0 +1,2 @@
+<?php
+namespace qqworld_collector\module\collect_filter; class artificial_intelligence extends filter { public function filter($item, $args, $source_link, $html, $type, $item_args, $download_args, $mode) { $api = isset($args['api']) ? $args['api'] : 'xfyun'; $what_to_do = isset($args['what-to-do']) ? $args['what-to-do'] : $this->options->qc_pseudo_original_artificial_intelligence_what_to_do; $item = apply_filters( 'qqworld-collector-artificial-intelligence', $item, array('api' => $api, 'what_to_do' => $what_to_do) ); return $item; } } ?>

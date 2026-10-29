@@ -1,0 +1,2 @@
+<?php
+namespace qqworld_collector\module\collect_filter; require_once dirname(__DIR__) . '/security-boundaries.php'; class trim extends filter { public function filter($item, $args, $source_link, $html, $type, $item_args, $download_args, $mode) { $trim_mode = is_array($args) && isset($args['mode']) ? $args['mode'] : 'trim'; if (!in_array($trim_mode, array('trim', 'ltrim', 'rtrim'), true)) return $item; $item = \qqworld_collector\security\template_call($trim_mode, array($item)); return $item; } } ?>

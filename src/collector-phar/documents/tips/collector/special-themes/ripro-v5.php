@@ -1,0 +1,1 @@
+<p>和 <a href="<?php print admin_url('admin.php?page=qqworld-collector-documents#tips--collector--special-themes--ripro-v2'); ?>" target="_blank">Ripro-V2</a> 的文档是一样的。</p>

@@ -1,0 +1,2 @@
+<?php
+namespace qqworld_collector\module\collect_filter; class switcher extends filter { public function filter($item, $args, $source_link, $html, $type, $item_args, $download_args, $mode) { if (count($args)) foreach ($args as $guid => $case) { if ($case['match'] == trim($item)) return apply_filters( 'qqworld-collector-collection-project-variable-filter', $case['value'], 0 ); } return $item; } } ?>

@@ -1,0 +1,2 @@
+<?php
+ namespace OSS\Result; use OSS\Core\OssException; class InitiateBucketWormResult extends Result { protected function parseDataFromResponse() { $header = $this->rawResponse->header; if (isset($header["x-oss-worm-id"])) { return strval($header["x-oss-worm-id"]); } throw new OssException("cannot get worm-id"); } }

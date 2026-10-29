@@ -1,0 +1,3 @@
+<div><section class="qqworld-aspect-ratio" data-ratio="16:10"><iframe src="//player.bilibili.com/player.html?aid=31633752&cid=55317377&page=1" scrolling="no" data-ratio="16:10" framespacing="0" allowfullscreen="true"></iframe></section></div>
+<p>采集微信公众号订阅，学习要点：采集作者和个人说明。</p>
+<p><a href="https://www.bilibili.com/video/av31633752?zw" target="_blank" class="button button-primary qc-icon link">去bilibili观看</a></p>

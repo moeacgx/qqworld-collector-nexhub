@@ -1,0 +1,2 @@
+<?php
+ namespace QQWorld\Setup\Model\Customer; class CustomerDataGeneratorFactory { private $objectManager; public function __construct(\QQWorld\Framework\ObjectManagerInterface $objectManager) { $this->objectManager = $objectManager; } public function create(array $config) { return $this->objectManager->create( \QQWorld\Setup\Model\Customer\CustomerDataGenerator::class, [ 'addressGenerator' => $this->objectManager->create( \QQWorld\Setup\Model\Address\AddressDataGenerator::class ), 'config' => $config ] ); } } 

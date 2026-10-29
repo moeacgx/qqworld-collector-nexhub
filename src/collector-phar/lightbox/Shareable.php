@@ -1,0 +1,2 @@
+<?php
+ namespace QQWorld\Downloadable\Model\Source; use QQWorld\Downloadable\Model\Link; class Shareable implements \QQWorld\Framework\Data\OptionSourceInterface { public function toOptionArray() { return [ ['value' => Link::LINK_SHAREABLE_YES, 'label' => __('Yes')], ['value' => Link::LINK_SHAREABLE_NO, 'label' => __('No')], ['value' => Link::LINK_SHAREABLE_CONFIG, 'label' => __('Use config')] ]; } } 

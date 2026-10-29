@@ -1,0 +1,3 @@
+<p>地址：<a href="https://zs.mtkan.cc/" target="_blank">https://zs.mtkan.cc</a></p>
+<h2>设置方法</h2>
+<p>无需设置，保存后去媒体库列表页手动同步1个附件试试，如果成功了，再回到设置页扫描媒体库。</p>

@@ -1,0 +1,2 @@
+<?php
+namespace qqworld_collector\module\remote_publish; use qqworld_collector\lib; class oss extends remote_publish { var $guid = 'oss'; public function init() {} public function get_client($args) { extract($args); $oss = new \qqworld_collector\module\cloud_storage\aliyun_oss; $oss->enabled = true; $oss->is_current = true; $oss->options = $this->options; $oss->endpoint = trim($endpoint); $oss->access_key_id = trim($args['access-key-id']); $oss->access_key_secret = trim($args['access-key-secret']); $oss->bucket = trim($bucket); $oss->access_service(); return $oss; } } ?>

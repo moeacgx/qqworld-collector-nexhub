@@ -1,0 +1,3 @@
+<p>在更换主题时，有大量缩略图需要从新定义尺寸，为了解决这个问题，特别推荐这一款叫做 <a href="https://downloads.wordpress.org/plugin/regenerate-thumbnails.zip" target="_blank">Regenerate Thumbnails</a> 的插件，用起来也很方便。</p>
+<p>在重建前，可能需要在 <strong>常规设置</strong> -&gt; <a href="<?php print admin_url('options-media.php'); ?>" target="_blank">媒体</a> 里面定义一下缩略图大小。之后在 <strong>工具</strong> 菜单中找到 <strong>Regenerate Thumbnails</strong>，点击重建后，把一切交给时间。</p>
+<p>注意共有两个重建按钮，第一个是重建所有缩略图，第二个是只重建特色图片的缩略图。</p>

@@ -1,0 +1,2 @@
+<?php
+ namespace OSS\Result; use OSS\Model\VersioningConfig; class GetBucketVersioningResult extends Result { protected function parseDataFromResponse() { $content = $this->rawResponse->body; $config = new VersioningConfig(); $config->parseFromXml($content); return $config->getStatus(); } } 

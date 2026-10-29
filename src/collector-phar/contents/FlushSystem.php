@@ -1,0 +1,2 @@
+<?php
+ namespace QQWorld\Backend\Controller\Adminhtml\Cache; class FlushSystem extends \QQWorld\Backend\Controller\Adminhtml\Cache { public function execute() { foreach ($this->_cacheFrontendPool as $cacheFrontend) { $cacheFrontend->clean(); } $this->_eventManager->dispatch('adminhtml_cache_flush_system'); $this->messageManager->addSuccess(__("The QQWorld cache storage has been flushed.")); $resultRedirect = $this->resultRedirectFactory->create(); return $resultRedirect->setPath('adminhtml/*'); } } 

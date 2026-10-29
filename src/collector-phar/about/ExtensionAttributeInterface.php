@@ -1,0 +1,2 @@
+<?php
+ namespace QQWorld\TestModuleDefaultHydrator\Api\Data; interface ExtensionAttributeInterface { const ID = 'id'; const CUSTOMER_ID = 'customer_id'; const VALUE = 'value'; public function getId(); public function setId($id); public function getCustomerId(); public function setCustomerId($customerId); public function getValue(); public function setValue($value); } 

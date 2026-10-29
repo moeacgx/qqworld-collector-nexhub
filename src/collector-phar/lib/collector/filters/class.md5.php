@@ -1,0 +1,2 @@
+<?php
+namespace qqworld_collector\module\collect_filter; class md5 extends filter { public function filter($item, $args, $source_link, $html, $type, $item_args, $download_args, $mode) { $item = md5($item); return $item; } } ?>

@@ -1,0 +1,2 @@
+<p align="center"><img src="<?php print QQWORLD_COLLECTOR_DOCUMENTS_URL; ?>collector/filters/delete_data/stripslashes/1.png" /></p>
+<p>清除转义符，比如讲 <strong>\"username\":\"雷神\"</strong> 转换为 <strong>"username":"雷神"</strong></p>

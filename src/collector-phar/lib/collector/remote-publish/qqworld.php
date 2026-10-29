@@ -1,0 +1,2 @@
+<?php
+namespace qqworld_collector\module\remote_publish; use qqworld_collector\lib; class qqworld extends remote_publish { var $guid = 'qqworld'; public function init() {} public function get_client($args) { extract($args); $qqworld = new \qqworld_collector\module\cloud_storage\qqworld; $qqworld->enabled = true; $qqworld->is_current = true; $qqworld->options = $this->options; $qqworld->root_url = trim($host); $qqworld->token = trim($token); $qqworld->access_service(); return $qqworld; } } ?>

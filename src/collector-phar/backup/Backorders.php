@@ -1,0 +1,2 @@
+<?php
+ namespace QQWorld\CatalogInventory\Model\Source; class Backorders implements \QQWorld\Framework\Option\ArrayInterface { public function toOptionArray() { return [ ['value' => \QQWorld\CatalogInventory\Model\Stock::BACKORDERS_NO, 'label' => __('No Backorders')], [ 'value' => \QQWorld\CatalogInventory\Model\Stock::BACKORDERS_YES_NONOTIFY, 'label' => __('Allow Qty Below 0') ], [ 'value' => \QQWorld\CatalogInventory\Model\Stock::BACKORDERS_YES_NOTIFY, 'label' => __('Allow Qty Below 0 and Notify Customer') ] ]; } } 

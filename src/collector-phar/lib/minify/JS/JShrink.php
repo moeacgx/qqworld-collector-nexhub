@@ -1,0 +1,2 @@
+<?php
+ namespace Minify\JS; class JShrink { protected static $defaultOptions = array('flaggedComments' => true); public static function minify($js, array $options = array()) { $options = array_merge( self::$defaultOptions, $options ); return \JShrink\Minifier::minify($js, $options); } } 

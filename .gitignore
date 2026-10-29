@@ -1,0 +1,7 @@
+*.zip
+*.tar.gz
+*.log
+.env
+wp-config.php
+.DS_Store
+Thumbs.db

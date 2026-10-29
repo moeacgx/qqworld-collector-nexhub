@@ -1,0 +1,3 @@
+<div><section class="qqworld-aspect-ratio" data-ratio="16:10"><iframe src="//player.bilibili.com/player.html?aid=34077785&cid=59688225&page=1" scrolling="no" data-ratio="16:10" framespacing="0" allowfullscreen="true"></iframe></section></div>
+<p>采集“点我一下”网站的萌宠栏目，对付POST请求的AJAX分页。</p>
+<p><a href="https://www.bilibili.com/video/av34077785?zw" target="_blank" class="button button-primary qc-icon link">去bilibili观看</a></p>

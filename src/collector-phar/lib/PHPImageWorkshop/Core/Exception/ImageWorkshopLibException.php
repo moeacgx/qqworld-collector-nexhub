@@ -1,0 +1,2 @@
+<?php
+ namespace PHPImageWorkshop\Core\Exception; use PHPImageWorkshop\Exception\ImageWorkshopBaseException as ImageWorkshopBaseException; class ImageWorkshopLibException extends ImageWorkshopBaseException { } 

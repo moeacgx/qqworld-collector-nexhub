@@ -1,0 +1,2 @@
+<?php
+ namespace QQWorld\ImportExport\Test\Unit\Model\Source\Import; abstract class AbstractBehaviorTestCase extends \PHPUnit\Framework\TestCase { protected $_model; protected function tearDown() { unset($this->_model); } } 

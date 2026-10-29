@@ -1,0 +1,3 @@
+<div><section class="qqworld-aspect-ratio" data-ratio="16:10"><iframe src="//player.bilibili.com/player.html?aid=28183884&cid=48715217&page=1" scrolling="no" data-ratio="16:10" framespacing="0" allowfullscreen="true"></iframe></section></div>
+<p>要点：使用CSS选择器进行定位，将相对地址转换为绝对地址，采集文章内容分页。</p>
+<p><a href="https://www.bilibili.com/video/av28183884?zw" target="_blank" class="button button-primary qc-icon link">去bilibili观看</a></p>

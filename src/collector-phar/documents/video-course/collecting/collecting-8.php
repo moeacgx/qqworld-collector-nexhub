@@ -1,0 +1,3 @@
+<div><section class="qqworld-aspect-ratio" data-ratio="16:10"><iframe src="//player.bilibili.com/player.html?aid=31965687&cid=55912076&page=1" scrolling="no" data-ratio="16:10" framespacing="0" allowfullscreen="true"></iframe></section></div>
+<p>很多人都想拥有自己的网店，但是苦于繁琐的货品上架工作，本教程将教大家如何采集天猫的商品并快速部署到你的WooCommerce系统中去，轻轻松松开网店。</p>
+<p><a href="https://www.bilibili.com/video/av31965687?zw" target="_blank" class="button button-primary qc-icon link">去bilibili观看</a></p>

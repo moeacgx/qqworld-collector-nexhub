@@ -1,0 +1,2 @@
+<p>默认只支持将存储挂载到根目录，如果需要挂载到其他目录，请在alist的 <a href="<?php print admin_url('admin.php?page=qqworld-collector-cloud-storage#cloud-storage'); ?>" target="_blank">设置</a> 里启用 <strong>自定义上传目录</strong>。</pp>
+<p>注意，alist的存储设置里一定要关闭签名，否则将无法直连。</p>

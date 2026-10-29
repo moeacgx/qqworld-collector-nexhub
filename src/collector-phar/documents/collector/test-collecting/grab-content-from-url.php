@@ -1,0 +1,99 @@
+<p align="center"><img src="<?php print QQWORLD_COLLECTOR_DOCUMENTS_URL; ?>collector/test-collecting/grab-content-from-url/1.png" /></p>
+<p>测试采集链接的内容，看是否和预期的是一样的。</p>
+<p>因为有些网站防采集会造成浏览器看到的内容和采集的内容不一样。</p>
+<h2>设置</h2>
+<h4>请求方法</h4>
+<p>有些链接是需要POST请求的。</p>
+<table class="wp-list-table widefat fixed striped">
+	<thead>
+		<tr>
+			<th width="40">序号</th>
+			<th width="120">方法</th>
+			<th>描述</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>1</td>
+			<td>GET</td>
+			<td>请求指定的页面信息，并返回实体主体。</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>HEAD</td>
+			<td>类似于get请求，只不过返回的响应中没有具体的内容，用于获取报头</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>POST</td>
+			<td>向指定资源提交数据进行处理请求（例如提交表单或者上传文件）。数据被包含在请求体中。POST请求可能会导致新的资源的建立和/或已有资源的修改。</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>PUT</td>
+			<td>从客户端向服务器传送的数据取代指定的文档的内容。</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>DELETE</td>
+			<td>请求服务器删除指定的页面。</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>CONNECT</td>
+			<td>HTTP/1.1协议中预留给能够将连接改为管道方式的代理服务器。</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>OPTIONS</td>
+			<td>允许客户端查看服务器的性能。</td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>TRACE</td>
+			<td>回显服务器收到的请求，主要用于测试或诊断。</td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td>PATCH</td>
+			<td>实体中包含一个表，表中说明与该URI所表示的原内容的区别。</td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td>MOVE</td>
+			<td>请求服务器将指定的页面移至另一个网络地址。</td>
+		</tr>
+		<tr>
+			<td>11</td>
+			<td>COPY</td>
+			<td>请求服务器将指定的页面拷贝至另一个网络地址。</td>
+		</tr>
+		<tr>
+			<td>12</td>
+			<td>LINK</td>
+			<td>请求服务器建立链接关系。</td>
+		</tr>
+		<tr>
+			<td>13</td>
+			<td>UNLINK</td>
+			<td>断开链接关系。</td>
+		</tr>
+		<tr>
+			<td>14</td>
+			<td>WRAPPED</td>
+			<td>允许客户端发送经过封装的请求。</td>
+		</tr>
+		<tr>
+			<td>15</td>
+			<td>Extension-mothed</td>
+			<td>在不改动协议的前提下，可增加另外的方法。</td>
+		</tr>
+	</tbody>
+</table>
+<p>注意，POST的链接可以将请求的URL和请求参数分两行写，如：</p>
+<p><code>https://www.google.com/<br />
+hl=zh-CN&q=Content-Type%20%E7%BA%AF%E6%96%87%E6%9C%AC&cad=h</code></p>
+<p>也可以用问号连起来<，如：/p>
+<p><code>https://www.google.com/?hl=zh-CN&q=Content-Type%20%E7%BA%AF%E6%96%87%E6%9C%AC&cad=h</code></p>
+<h4>请求页头（Headers）</h4>
+<p>有些链接需要Cookies才能获取到正确的内容。</p>

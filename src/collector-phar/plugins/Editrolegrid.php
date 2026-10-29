@@ -1,0 +1,2 @@
+<?php
+ namespace QQWorld\User\Controller\Adminhtml\User\Role; use QQWorld\Framework\Controller\ResultFactory; class Editrolegrid extends \QQWorld\User\Controller\Adminhtml\User\Role { public function execute() { return $this->resultFactory->create(ResultFactory::TYPE_PAGE); } } 

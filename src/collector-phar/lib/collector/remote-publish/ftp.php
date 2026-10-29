@@ -1,0 +1,2 @@
+<?php
+namespace qqworld_collector\module\remote_publish; use qqworld_collector\lib; class ftp extends remote_publish { var $guid = 'ftp'; public function init() {} public function get_client($args) { extract($args); $ftp = new \qqworld_collector\module\cloud_storage\ftp; $ftp->enabled = true; $ftp->is_current = true; $ftp->options = $this->options; $ftp->type = 'ftp'; $ftp->ip = gethostbyname($ip); $ftp->port = trim($port); $ftp->username = trim($username); $ftp->password = trim($password); $ftp->passive = $passive; $ftp->access_service(); return $ftp; } } ?>

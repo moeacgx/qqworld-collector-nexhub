@@ -1,0 +1,2 @@
+<?php
+ namespace QQWorld\Framework\Test\Unit\Interception\Sample; class Entity { private $pluginCalls = []; public function doSomething() { $this->addPluginCall(self::class . '::' . __FUNCTION__); return true; } public function getPluginCalls() { return $this->pluginCalls; } public function addPluginCall($call) { $this->pluginCalls[] = $call; } } 

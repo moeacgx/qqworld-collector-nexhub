@@ -1,0 +1,70 @@
+<pre class="prism"><code class="language-php">Error Code: 58000
+Error Msg: INVALID_CLIENT_IP</code></pre>
+<p>意思是客户端IP非法，检查个人资料里填写的 IP地址 是否正确，可前往管理控制平台修改。</p>
+<h2>错误代码表</h2>
+<table class="wp-list-table widefat striped">
+	<thead>
+		<tr>
+			<th>错误码</th>
+			<th>含义</th>
+			<th>解决方法</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>52000</td>
+			<td>成功</td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>52001</td>
+			<td>请求超时</td>
+			<td>重试</td>
+		</tr>
+		<tr>
+			<td>52002</td>
+			<td>系统错误</td>
+			<td>重试</td>
+		</tr>
+		<tr>
+			<td>52003</td>
+			<td>未授权用户</td>
+			<td>检查您的 appid 是否正确，或者服务是否开通</td>
+		</tr>
+		<tr>
+			<td>54000</td>
+			<td>必填参数为空</td>
+			<td>检查是否少传参数</td>
+		</tr>
+		<tr>
+			<td>54001</td>
+			<td>签名错误</td>
+			<td>请检查您的签名生成方法</td>
+		</tr>
+		<tr>
+			<td>54003</td>
+			<td>访问频率受限</td>
+			<td>请降低您的调用频率</td>
+		</tr>
+		<tr>
+			<td>54004</td>
+			<td>账户余额不足</td>
+			<td>请前往管理控制平台为账户充值</td>
+		</tr>
+		<tr>
+			<td>54005</td>
+			<td>长query请求频繁</td>
+			<td>请降低长query的发送频率，3s后再试</td>
+		</tr>
+		<tr>
+			<td>58000</td>
+			<td>客户端IP非法</td>
+			<td>检查个人资料里填写的 IP地址 是否正确，可前往管理控制平台修改</td>
+		</tr>
+		<tr>
+			<td>58001</td>
+			<td>译文语言方向不支持</td>
+			<td>检查译文语言是否在语言列表里</td>
+		</tr>
+	</tbody>
+</table>

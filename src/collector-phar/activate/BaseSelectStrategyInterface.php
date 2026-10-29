@@ -1,0 +1,2 @@
+<?php
+ namespace QQWorld\CatalogSearch\Model\Search\BaseSelectStrategy; use QQWorld\CatalogSearch\Model\Search\SelectContainer\SelectContainer; interface BaseSelectStrategyInterface { public function createBaseSelect(SelectContainer $selectContainer); } 

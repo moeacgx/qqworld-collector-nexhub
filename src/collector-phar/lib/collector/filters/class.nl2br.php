@@ -1,0 +1,2 @@
+<?php
+namespace qqworld_collector\module\collect_filter; class nl2br extends filter { public function filter($item, $args, $source_link, $html, $type, $item_args, $download_args, $mode) { $item = nl2br($item); return $item; } } ?>

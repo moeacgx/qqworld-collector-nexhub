@@ -1,0 +1,2 @@
+<?php
+ namespace OSS\Result; use OSS\Core\OssException; use OSS\Model\BucketInfo; class GetBucketInfoResult extends Result { protected function parseDataFromResponse() { $content = $this->rawResponse->body; if (empty($content)) { throw new OssException("body is null"); } $xml = simplexml_load_string($content); if (isset($xml->Bucket)) { $info = new BucketInfo(); $info->parseFromXmlNode($xml->Bucket); return $info; } else { throw new OssException("xml format exception"); } } }

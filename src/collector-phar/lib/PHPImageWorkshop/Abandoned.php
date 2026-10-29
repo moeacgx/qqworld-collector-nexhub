@@ -1,0 +1,2 @@
+<?php
+ namespace QQWorld\Reports\Controller\Adminhtml\Report\Shopcart; class Abandoned extends \QQWorld\Reports\Controller\Adminhtml\Report\Shopcart { public function execute() { $this->_initAction()->_setActiveMenu( 'QQWorld_Reports::report_shopcart_abandoned' )->_addBreadcrumb( __('Abandoned Carts'), __('Abandoned Carts') )->_addContent( $this->_view->getLayout()->createBlock(\QQWorld\Reports\Block\Adminhtml\Shopcart\Abandoned::class) ); $this->_view->getPage()->getConfig()->getTitle()->prepend(__('Abandoned Carts')); $this->_view->renderLayout(); } } 

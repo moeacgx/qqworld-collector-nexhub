@@ -1,0 +1,2 @@
+<?php
+namespace qqworld_collector\module\collect_filter; class ucfirst extends filter { public function filter($item, $args, $source_link, $html, $type, $item_args, $download_args, $mode) { $item = ucfirst(strtolower($item)); return $item; } } ?>

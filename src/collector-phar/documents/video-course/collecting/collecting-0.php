@@ -1,0 +1,3 @@
+<div><section class="qqworld-aspect-ratio" data-ratio="16:10"><iframe src="//player.bilibili.com/player.html?aid=412912051&bvid=BV1wV411d77K&cid=184221360&page=1" scrolling="no" data-ratio="16:10" framespacing="0" allowfullscreen="true"></iframe></section></div>
+<p>要点：设置静态地址、批量地址以及要保存的分类目录，修改文章状态以及开启抓取远程图片和自动设置特色图片。</p>
+<p><a href="https://www.bilibili.com/video/BV1wV411d77K" target="_blank" class="button button-primary qc-icon link">去bilibili观看</a></p>

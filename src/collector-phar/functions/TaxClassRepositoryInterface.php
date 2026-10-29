@@ -1,0 +1,2 @@
+<?php
+ namespace QQWorld\Tax\Api; interface TaxClassRepositoryInterface { public function get($taxClassId); public function getList(\QQWorld\Framework\Api\SearchCriteriaInterface $searchCriteria); public function save(\QQWorld\Tax\Api\Data\TaxClassInterface $taxClass); public function delete(\QQWorld\Tax\Api\Data\TaxClassInterface $taxClass); public function deleteById($taxClassId); } 

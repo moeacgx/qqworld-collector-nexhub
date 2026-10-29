@@ -1,0 +1,1 @@
+<p>如果可以成功同步，但是同步后没有地址，可能是因为自定义数据表丢失，请 <a href="https://cloud.qqworld.org/data/User/admin/home/WordPress/Plugins/sql/wp_cloud_storage_metadata.sql" target="_blank"><strong>下载</strong></a> 该数据表导入你的数据库并重试，注意，如果你的表前缀不是wp_，导入后要改成你的前缀。</p>

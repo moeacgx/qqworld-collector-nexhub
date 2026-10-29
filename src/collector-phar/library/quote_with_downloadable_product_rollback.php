@@ -1,0 +1,2 @@
+<?php
+ $objectManager = \QQWorld\TestFramework\Helper\Bootstrap::getObjectManager(); $quote = $objectManager->create(\QQWorld\Quote\Model\Quote::class); $quote->load('reserved_order_id_1', 'reserved_order_id')->delete(); $quoteIdMask = $objectManager->create(\QQWorld\Quote\Model\QuoteIdMask::class); $quoteIdMask->delete($quote->getId()); require __DIR__ . '/product_downloadable_rollback.php'; 

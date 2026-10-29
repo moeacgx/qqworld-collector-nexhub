@@ -1,0 +1,2 @@
+<?php
+ namespace OSS\Model; class DeleteObjectInfo { public function __construct($key, $versionId = '') { $this->key = $key; $this->versionId = $versionId; } public function getKey() { return $this->key; } public function getVersionId() { return $this->versionId; } private $key = ""; private $versionId = ""; }

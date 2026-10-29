@@ -1,0 +1,26 @@
+.suggestion-paragraphs fieldset {
+	background: #f7f7f7;
+	width: 500px;
+	max-width: 95%;
+	padding: 10px;
+	margin: 0 auto 15px;
+	box-shadow: 1px 1px 5px rgb(0 0 0 / 15%);
+	position: relative;
+	border-radius: 10px 10px 0 0;
+	border-bottom: 5px solid #2271b1;
+}
+.suggestion-paragraphs legend {
+	background: #2271b1;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 32px;
+	display: block;
+	color: #Fff;
+	font-size: 16px;
+	font-weight: bold;
+	position: absolute;
+	left: -20px;
+	top: -15px;
+}

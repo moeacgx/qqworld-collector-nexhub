@@ -1,0 +1,2 @@
+<?php
+ namespace QQWorld\Indexer\Block\Backend\Grid\Column\Renderer; class Scheduled extends \QQWorld\Backend\Block\Widget\Grid\Column\Renderer\AbstractRenderer { public function render(\QQWorld\Framework\DataObject $row) { if ($this->_getValue($row)) { $class = 'grid-severity-notice'; $text = __('Update by Schedule'); } else { $class = 'grid-severity-major'; $text = __('Update on Save'); } return '<span class="' . $class . '"><span>' . $text . '</span></span>'; } } 

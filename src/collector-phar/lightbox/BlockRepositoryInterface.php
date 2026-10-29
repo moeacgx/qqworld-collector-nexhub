@@ -1,0 +1,2 @@
+<?php
+ namespace QQWorld\Cms\Api; use QQWorld\Framework\Api\SearchCriteriaInterface; interface BlockRepositoryInterface { public function save(Data\BlockInterface $block); public function getById($blockId); public function getList(\QQWorld\Framework\Api\SearchCriteriaInterface $searchCriteria); public function delete(Data\BlockInterface $block); public function deleteById($blockId); } 

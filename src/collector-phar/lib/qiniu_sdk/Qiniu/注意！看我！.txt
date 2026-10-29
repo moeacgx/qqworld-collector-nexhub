@@ -1,0 +1,5 @@
+七牛SDK大傻X，在Config.php里最后面加了3个print，直接干扰ajax输出，必须注释掉。
+
+//print("from cache\n");
+//print("from set\n");
+//print("from query\n");

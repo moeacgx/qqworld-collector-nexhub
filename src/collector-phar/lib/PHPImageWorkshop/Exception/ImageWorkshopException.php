@@ -1,0 +1,2 @@
+<?php
+ namespace PHPImageWorkshop\Exception; use PHPImageWorkshop\Exception\ImageWorkshopBaseException as ImageWorkshopBaseException; class ImageWorkshopException extends ImageWorkshopBaseException { public static function invalidUnitArgument() { return new self("Invalid unit value: should be ImageWorkshopLayer::UNIT_PIXEL or ImageWorkshopLayer::UNIT_PERCENT"); } } 

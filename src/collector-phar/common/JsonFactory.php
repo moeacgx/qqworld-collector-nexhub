@@ -1,0 +1,2 @@
+<?php
+ namespace QQWorld\Framework\Controller\Result; class JsonFactory { protected $objectManager = null; protected $instanceName = null; public function __construct( \QQWorld\Framework\ObjectManagerInterface $objectManager, $instanceName = \QQWorld\Framework\Controller\Result\Json::class ) { $this->objectManager = $objectManager; $this->instanceName = $instanceName; } public function create(array $data = []) { return $this->objectManager->create($this->instanceName, $data); } } 

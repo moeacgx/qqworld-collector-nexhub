@@ -1,0 +1,2 @@
+<p>如果你在使用DeepL翻译文章名，想把中文翻译成英文，可能会碰到无法自动识别语言的问题，解决方法是指定要翻译的语言，将下面的代码放到主题的 <em>functions.php</em> 中去：</p>
+<pre class="prism"><code class="language-php">add_filter( 'qqworld-collector-translate-name-from', function($from) { return 'ZH'; } );</code></pre>

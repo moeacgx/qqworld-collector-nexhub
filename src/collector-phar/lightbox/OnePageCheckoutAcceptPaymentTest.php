@@ -1,0 +1,2 @@
+<?php
+ namespace QQWorld\Braintree\Test\TestCase; use QQWorld\Mtf\TestCase\Scenario; class OnePageCheckoutAcceptPaymentTest extends Scenario { const MVP = 'yes'; const TEST_TYPE = 'acceptance_test, 3rd_party_test'; const SEVERITY = 'S2'; public function test() { $this->executeScenario(); } } 

@@ -1,0 +1,2 @@
+<p>为防止文章内容中的src、href或source里的地址被伪原创替换，先提取出来，可能会破坏HTML代码导致图像丢失，把这个放到主题的 <em>functions.php</em> 里试试：</p>
+<pre class="prism"><code class="language-php">add_filter( 'qqworld-collector-pseudo-original-replace-keywords-filter-link', '__return_false' );</code></pre>
